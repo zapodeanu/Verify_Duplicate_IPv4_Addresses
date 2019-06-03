@@ -22,7 +22,7 @@ def main():
     - This script will:
       - load a file with a configuration to be deployed to a network device
       - identify the IPv4 addresses that will be configured on interfaces
-      - search in the DNA Center database if these IPV4 addresses are configured on any interfaces
+      - search in the DNA Center database if these IPv4 addresses are configured on any interfaces
       - find if any clients are using the IPv4 addresses
     - Determine if deploying the configuration file will create an IP duplicate
     """
