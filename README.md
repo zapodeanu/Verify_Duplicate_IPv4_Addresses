@@ -11,7 +11,7 @@ requirements.txt provides the list of Python libraries needed. The script has be
 
 ## Usage
 
-This script will load the CLI template from the file with the name "configuration_template.txt". Update the template file with the desired content. 
+This script will load the CLI template from the file with the name "configuration_template.txt".
 
 - This script will:
   - load a file with a CLI configuration that is intended to be deployed to a network device
@@ -22,4 +22,6 @@ This script will load the CLI template from the file with the name "configuratio
  
 ## Test
 
-You may test this code on the DevNet Cisco DNA Center sandboxes. Change the config.py file to match the Cisco DNA Center IP address, username and password for your environment.
+You may test this code on the DevNet Cisco DNA Center sandboxes. 
+Change the config.py file to match the Cisco DNA Center IP address, username and password for your environment.
+You will need to update the template file with the desired content. 
