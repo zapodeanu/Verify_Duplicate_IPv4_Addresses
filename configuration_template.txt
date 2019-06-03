@@ -1,0 +1,8 @@
+!
+interface Loopback2019
+ description test_loopback
+ ip address 10.93.130.21 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 10.93.130.35 255.255.255.0
+!
