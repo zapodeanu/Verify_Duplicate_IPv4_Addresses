@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-# developed by Gabi Zapodeanu, TSA, GPO, Cisco Systems
+# developed by Gabi Zapodeanu, TME, Enterprise Networks, Cisco Systems
 
 
 import urllib3
