@@ -11,11 +11,15 @@ requirements.txt provides the list of Python libraries needed. The script has be
 
 ## Usage
 
-Show users how to use the code. Be specific.
-Use appropriate formatting when showing code snippets or command line output.
-If a particular [DevNet Sandbox](https://developer.cisco.com/sandbox/) or [Learning Lab](https://developer.cisco.com/learning-labs/) can be used in to provide a network or other resources to be used with this code, call that out here. 
-
-## How to test the software
-
 This script will load the CLI template from the file with the name "configuration_template.txt". Update the template file with the desired content. 
 
+- This script will:
+ - load a file with a CLI configuration that is intended to be deployed to a network device
+ - identify the IPv4 addresses that will be configured on interfaces
+ - search using the DNA Center inventory database if these IPv4 addresses are configured on any interfaces, regardless the operational state of the interface, if "up" or "down"
+ - find if any clients are using the IPv4 addresses
+ - determine if deploying the configuration file will create an IP duplicate
+ 
+## Test
+
+You may test this code on the DevNet Cisco DNA Center sandboxes. Change the config.py file to match the Cisco DNA Center IP address, username and password for your environment.
