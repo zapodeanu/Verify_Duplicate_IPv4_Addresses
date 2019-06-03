@@ -14,11 +14,11 @@ requirements.txt provides the list of Python libraries needed. The script has be
 This script will load the CLI template from the file with the name "configuration_template.txt". Update the template file with the desired content. 
 
 - This script will:
- - load a file with a CLI configuration that is intended to be deployed to a network device
- - identify the IPv4 addresses that will be configured on interfaces
- - search using the DNA Center inventory database if these IPv4 addresses are configured on any interfaces, regardless the operational state of the interface, if "up" or "down"
- - find if any clients are using the IPv4 addresses
- - determine if deploying the configuration file will create an IP duplicate
+  - load a file with a CLI configuration that is intended to be deployed to a network device
+  - identify and validate the IPv4 addresses that will be configured on interfaces
+  - search using the DNA Center inventory database if these IPv4 addresses are configured on any interfaces, regardless the operational state of the interface, if "up" or "down"
+  - find if any clients are using the IPv4 addresses
+  - determine if deploying the configuration file will create an IP duplicate
  
 ## Test
 
