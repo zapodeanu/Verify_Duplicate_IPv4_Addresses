@@ -1,11 +1,21 @@
+ 
 # Verify_Duplicate_IPv4_Addresses
 
 This repo is for a simple script to verify if a CLI template will create duplicated IPv4 addresses with addresses. 
-This script will use the Cisco DNA Center APIs to access tge device and client inventories.
+This script will use the Cisco DNA Center APIs to access the device and client inventories.
 
-- This script will:
- - load a file with a CLI configuration that is intended to be deployed to a network device
- - identify the IPv4 addresses that will be configured on interfaces
- - search using the DNA Center inventory database if these IPv4 addresses are configured on any interfaces, regardless the operational state of the interface, if "up" or "down"
- - find if any clients are using the IPv4 addresses
- - determine if deploying the configuration file will create an IP duplicate
+
+## Installation
+requirements.txt provides the list of Python libraries needed. The script has been tested on Cisco DNA Center version 1.2.10
+
+
+## Usage
+
+Show users how to use the code. Be specific.
+Use appropriate formatting when showing code snippets or command line output.
+If a particular [DevNet Sandbox](https://developer.cisco.com/sandbox/) or [Learning Lab](https://developer.cisco.com/learning-labs/) can be used in to provide a network or other resources to be used with this code, call that out here. 
+
+## How to test the software
+
+This script will load the CLI template from the file with the name "configuration_template.txt". Update the template file with the desired content. 
+
