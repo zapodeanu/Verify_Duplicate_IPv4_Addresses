@@ -7,16 +7,13 @@
 # the utils module includes common utilized utility functions
 
 import json
-import os
-import os.path
 import re  # needed for regular expressions matching
 import select
-import socket  # needed for IPv4 validation
 import sys
 import urllib3
 import subprocess  # needed for the ping function
 import ipaddress  # needed for IPv4 address validation
-import datetime, time  # needed for epoch time conversion
+import time  # needed for epoch time conversion
 
 from urllib3.exceptions import InsecureRequestWarning
 

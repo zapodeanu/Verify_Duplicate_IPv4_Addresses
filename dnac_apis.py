@@ -7,11 +7,7 @@
 import requests
 import json
 import time
-import os
-import os.path
 import urllib3
-import socket
-import re
 import utils
 
 from urllib3.exceptions import InsecureRequestWarning  # for insecure https warnings
@@ -790,7 +786,6 @@ def check_task_id_output(task_id, dnac_jwt_token):
             task_response = requests.get(url, headers=header, verify=False)
             task_json = task_response.json()
             task_output = task_json['response']
-            task_output['endTime']
             completed = 'yes'
         except:
             time.sleep(1)
@@ -1170,7 +1165,7 @@ def pnp_delete_provisioned_device(device_id, dnac_jwt_token):
     :param dnac_jwt_token: Cisco DNA C token
     :return:
     """
-    url = DNAC_URL +'/dna/intent/api/v1/onboarding/pnp-device/' + device_id
+    url = DNAC_URL + '/dna/intent/api/v1/onboarding/pnp-device/' + device_id
     header = {'content-type': 'application/json', 'x-auth-token': dnac_jwt_token}
     response = requests.delete(url, headers=header, verify=False)
     delete_status = response.json()
