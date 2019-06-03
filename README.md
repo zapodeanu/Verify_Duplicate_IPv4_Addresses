@@ -6,7 +6,8 @@ This script will use the Cisco DNA Center APIs to access the device and client i
 
 
 ## Installation
-requirements.txt provides the list of Python libraries needed. The script has been tested on Cisco DNA Center version 1.2.10
+requirements.txt provides the list of Python libraries needed. 
+The script has been tested on Cisco DNA Center version 1.2.10.
 
 
 ## Usage
